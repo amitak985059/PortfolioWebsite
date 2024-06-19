@@ -1,0 +1,60 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: -100px;
+    transition: bottom 0.5s ease-in-out;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer.visible {
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-link:hover {
+    transform: scale(1.1);
+}
+
+.email:hover {
+    color: #f39c12;
+}
+
+.instagram:hover {
+    color: #e4405f;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.footer-link:hover {
+    animation: bounce 0.5s;
+}
